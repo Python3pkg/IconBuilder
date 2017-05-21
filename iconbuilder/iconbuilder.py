@@ -23,7 +23,7 @@ class IconBuilder:
         return target
     def make_folder(self):
         foldername=self.picpath+'/'+'resized'
-        print 'new imgs will be saved to '+foldername
+        print('new imgs will be saved to '+foldername)
         if not os.path.isdir(foldername):
             os.mkdir(foldername)
         return foldername
@@ -44,7 +44,7 @@ class IconBuilder:
 def main(filename,name):
     '''A Simple & Useful Tool for Logo Resizer'''
     cwd=os.getcwd()
-    print cwd
+    print(cwd)
     ib=IconBuilder(cwd)
     f=open(filename)
     line=f.readline()
